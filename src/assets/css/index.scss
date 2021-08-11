@@ -1,0 +1,77 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './reset.scss';
+// html,
+// body .app {
+//   color: #333333;
+//   font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+//   background-color: $background-color;
+// }
+
+.app-container {
+  padding-bottom: 50px;
+}
+// *{
+//   margin: 0;
+//   padding: 0;
+// }
+.address{
+  .van-button--danger{
+    border: #409EFF solid 1px;
+    background-color: #fff;
+    color: #409EFF;
+  }
+}
+.addressItem{
+  [class*=van-hairline]::after{
+    border: none;
+  }
+}
+// global transition css
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
